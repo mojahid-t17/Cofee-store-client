@@ -7,8 +7,8 @@ import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Provider/AuthProvider";
 const CofeeCard = ({ cofee, cofees,setCofees }) => {
-  const Navigate=useNavigate();
   const {user}=useContext(AuthContext);
+  const Navigate =useNavigate();
   console.log(cofee);
   const { _id, name, chef, category, photourl } = cofee;
 
@@ -26,7 +26,7 @@ const CofeeCard = ({ cofee, cofees,setCofees }) => {
       }).then((result) => {
         
         if (result.isConfirmed) {
-          fetch(`http://localhost:5000/cofees/${id}`, {
+          fetch(`https://cofee-store-server-jcjtyuiek-mojahidt17s-projects.vercel.app/cofees/${id}`, {
             method: "DELETE",
           })
             .then((res) => res.json())
@@ -46,7 +46,7 @@ const CofeeCard = ({ cofee, cofees,setCofees }) => {
       });
     }
     else{
-       Navigate('/signIn')
+      Navigate('/signIn')
     }
   
   };

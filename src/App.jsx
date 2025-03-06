@@ -4,6 +4,7 @@ import CofeeCard from "./assets/Components/CofeeCard";
 
 function App() {
   const loadedCofees = useLoaderData();
+  console.log(loadedCofees)
   const [cofees, setCofees] = useState(loadedCofees);
 
   return (
@@ -20,7 +21,7 @@ function App() {
     src="images/more/5.png"
     alt="Banner Image"
     className="absolute  bottom-0 right-0 sm:block hidden object-contain"
-    style={{ maxWidth: "250px", maxHeight: "550px" }} // Adjust size if needed
+    style={{ maxWidth: "250px", maxHeight: "550px" }} 
   />
   <div className="relative z-10 mx-auto px-4">
     <div className="text-center my-8">

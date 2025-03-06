@@ -19,7 +19,7 @@ console.log(cofee)
         const updatedcofee={name,chef,supplier,taste,category,details,photourl}
        console.log(cofee)
        console.log(_id)
-       fetch(`http://localhost:5000/cofees/${_id}`,{
+       fetch(`https://cofee-store-server-jcjtyuiek-mojahidt17s-projects.vercel.app/cofees/${_id}`,{
         method:'PUT',
         headers:{
           'Content-type':'application/json'

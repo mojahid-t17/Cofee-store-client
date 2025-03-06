@@ -13,7 +13,7 @@ const AddCofee = () => {
     const photourl=form.photourl.value;
     const cofee={name,chef,supplier,taste,category,details,photourl}
     console.log(cofee)
-    fetch('http://localhost:5000/cofees',{
+    fetch('https://cofee-store-server-jcjtyuiek-mojahidt17s-projects.vercel.app/cofees',{
       method:'POST',
       headers:{
         'Content-type':'application/json'

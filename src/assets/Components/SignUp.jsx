@@ -37,7 +37,7 @@ const SignUp = () => {
     .then(res=>{
       console.log(res)
     
-      fetch('http://localhost:5000/users',{
+      fetch('https://cofee-store-server-jcjtyuiek-mojahidt17s-projects.vercel.app/users',{
         method:'POST',
         headers:{
           'content-type':'application/json'

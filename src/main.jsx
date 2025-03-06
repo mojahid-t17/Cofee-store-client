@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <App></App>,
-        loader:()=>fetch('http://localhost:5000/cofees'),
+        loader:()=>fetch('https://cofee-store-server-jcjtyuiek-mojahidt17s-projects.vercel.app/cofees'),
       },
       {
         path:"/addCofee",
@@ -33,12 +33,12 @@ const router = createBrowserRouter([
       {
         path:"/updateCofee/:id",
         element:<PrivateRoute><UpdateCofee></UpdateCofee></PrivateRoute>,
-        loader: ({params})=>fetch(`http://localhost:5000/cofees/${params.id}`)
+        loader: ({params})=>fetch(`https://cofee-store-server-jcjtyuiek-mojahidt17s-projects.vercel.app/${params.id}`)
       },
       {
         path:"/displayCofee/:id",
         element:<PrivateRoute><DisplayCofee></DisplayCofee></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/cofees/${params.id}`)
+        loader:({params})=>fetch(`https://cofee-store-server-jcjtyuiek-mojahidt17s-projects.vercel.app/${params.id}`)
       },
       {
         path:"/signUp",
@@ -51,7 +51,8 @@ const router = createBrowserRouter([
       {
         path:"/displayUsers",
         element: <DisplayUsers></DisplayUsers>,
-        loader:()=>fetch('http://localhost:5000/users'),
+        loader:()=>fetch('https://cofee-store-server-jcjtyuiek-mojahidt17s-projects.vercel.app/users'),
+        
       },
    
     ]
