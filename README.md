@@ -61,8 +61,6 @@ This project is deployed on **Firebase Hosting**. You can access the live versio
 - **MongoDB** (local or MongoDB Atlas)  
 - **Firebase Account**  
 
-### **Clone the Repository**  
-
 
 
 Feel free to contribute or suggest improvements! 🚀  
