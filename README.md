@@ -2,7 +2,7 @@
 
 A responsive and dynamic web application for managing a coffee store, built with **React.js**, **Tailwind CSS**, **DaisyUI**, and **Node.js** with **MongoDB** as the backend. This system allows users to **add, view, edit, and delete** coffee details with authentication and database storage.  
 
-🔗 **Live Demo**: [Coffee Store App](https://cofee-store-b9f7b.web.app/)  
+
 
 ## 🚀 Features  
 
@@ -49,9 +49,7 @@ A responsive and dynamic web application for managing a coffee store, built with
 ### **Authentication:**  
 - **Firebase Authentication**: Secure login system.  
 
-## 🚀 Deployment  
-This project is deployed on **Firebase Hosting**. You can access the live version here:  
-🔗 **[Live Demo](https://cofee-store-b9f7b.web.app/)**  
+
 
 ## 📥 Installation Guide  
 
